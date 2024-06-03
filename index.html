@@ -18,7 +18,7 @@
 <body>
   <div class="container">
 
-    <div class="message-sent">
+    <div class="message-sent" style="display: none;">
       <h3><img src="assets/img/check.png" alt=""> Mesaj gönderildi! </h3>
       <p>Formu doldurduğunuz için teşekkür ederiz. Yakında sizinle iletişime geçeceğiz!</p>
     </div>
@@ -26,39 +26,61 @@
       <h1>Bize Ulaşın</h1>
       <div class="last">
         <label for="ad">Adı:<span id="yildiz"></span>
-          <input type="text" id="ad" name="ad"></label>
-
+          <input type="text" id="ad" name="ad">
+          <span id="hata-mesaji-adi"></span></label>
         <label for="soyad">Soyadı:<span id="yildiz"></span>
-          <input type="text" id="soyad" name="soyad"></label>
+          <input type="text" id="soyad" name="soyad">
+          <span id="hata-mesaji-soyadi"></span></label>
       </div>
       <div class="mail">
         <label for="email">Email:<span id="yildiz"></span></label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email"><span id="hata-mesaji-email"></span>
       </div>
       <div class="sorgu">
         <p>Sorgu Türü:<span id="yildiz"></span></p>
+        <span id="hata-mesaji-sorgu"></span>
         <div id="sorgu-flex">
           <p class="radio1">
-            <label for="sorgu1"><input type="radio" id="sorgu1" name="sorgu">
-             Genel sorgulama</label>
+            <label for="sorgu1"><input type="radio" id="sorgu1" class="sorgu4" name="sorgu">
+              <span id="genel"></span>Genel sorgulama</label>
           </p>
           <p class="radio1">
-            <label for="sorgu2"><input type="radio" id="sorgu2" name="sorgu"> Destek Talebi</label>
+            <label for="sorgu2"><input type="radio" id="sorgu2" class="sorgu4" name="sorgu"><span id="destek"></span> Destek
+              Talebi</label>
           </p>
         </div>
       </div>
       <div class="mesaj">
         <label for="mesaj">Mesajınız:<span id="yildiz"></span></label>
+        <span id="hata-mesaji-mesaj"></span>
         <textarea id="mesaj" name="mesaj" rows="4" cols="50"></textarea>
       </div>
       <div class="onay">
         <input type="checkbox" id="onay" name="onay">
-        <label for="onay">Gizlilik Politikasını kabul ediyorum.<span id="yildiz"></span></label>
+        <label for="onay">Gizlilik Politikasını kabul ediyorum.<span id="yildiz"></span>
+          <span id="hata-mesaji-check"></span></label>
       </div>
       <div class="submit">
-        <input type="submit" value="Gönder">
+        <input type="submit" id="submit" value="Gönder">
       </div>
     </form>
+    <div class="cikti">
+      <div class="adi-text">
+        <span id="adi-text-show"></span>
+      </div>
+      <div class="soyadi-text">
+        <span id="soyadi-text-show"></span>
+      </div>
+      <div class="email-text">
+        <span id="email-text-show"></span>
+      </div>
+      <div class="sorgu-text">
+        <span id="sorgu-text-show"></span>
+      </div>
+      <div class="mesaj-text">
+        <span id="mesaj-text-show"></span>
+      </div>
+    </div>
   </div>
 
 
