@@ -7,6 +7,9 @@
 * {
   margin: 0;
 }
+:root {
+  accent-color: #0C7D69;
+}
 
 html,
 body {
@@ -34,6 +37,7 @@ button,
 textarea,
 select {
   font: inherit;
+  cursor: pointer;
 }
 
 p,
@@ -84,9 +88,14 @@ form {
   margin-top: 8px;
   border: 1px solid #86A2A5;
   width: 100%;
+  outline: none;
+}
+#email:hover, #ad:hover, #soyad:hover {
+  border: 1px solid #0C7D69;
 }
 #sorgu1, #sorgu2, #mesaj {
   border: 1px solid #86A2A5;
+  outline: none;
 }
 .sorgu {
   font-size: 24px;
@@ -108,9 +117,13 @@ input{
   border-radius: 10px;
   width: 100%;
   font-size: 18px;
+}
+
+#sorgu-flex label {
   display: flex;
   gap: 15px;
   align-items: center;
+  cursor: pointer;
 }
 
 .radio1 input {
