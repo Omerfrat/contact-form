@@ -12,4 +12,4 @@ Bu proje, HTML, CSS ve JavaScript kullanılarak oluşturulmuş bir iletişim say
 </div>
 
 #### Demo Link
-[http://xn--merfrat-80a94c.com/contact-form/](http://xn--merfrat-80a94c.com/contact-form/) 
+[http://ömerfırat.com/contact-form/](http://xn--merfrat-80a94c.com/contact-form/) 
